@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:todo_app/database/hive_database.dart';
 
@@ -97,6 +99,14 @@ class TodoAddButton extends StatelessWidget {
           );
         },
       ),
+    );
+  }
+
+  BottomNavigationBarItem customBottomNavbarItem(
+      {required Widget icon, required String label}) {
+    return BottomNavigationBarItem(
+      icon: icon,
+      label: label,
     );
   }
 }
